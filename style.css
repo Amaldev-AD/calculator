@@ -30,10 +30,13 @@
     font-size: 26px;
     font-weight: 500;
     cursor: pointer;
-    margin: 5px;
+    margin: 5px 9px;
     transition: all 0.3s ease-in-out ;
 
 
+}
+.divinput{
+    padding: 7px;
 }
 .calculator input{
     border: none;
@@ -47,15 +50,23 @@
     font-weight: 400;
     /* overflow-x: auto; */
     margin-bottom: 22px;
-    background-color: #939499c3;
-    color: white;
+    background-color: #b6d1c2;
+    color: black;
+    font-family: 'Play', 'Russo One', sans-serif;
 }
 #equal{
     width: 133px;
+}
+.calculator  .diff{
+    background: #ade0efbd;
+}
+.calculator button:hover{
+    background: grey;
 }
 .calculator button:active{
     transform: scale(0.95);
     color: yellow;
     font-size: 18px;
     font-weight: 700;
+    background-color: grey;
 }

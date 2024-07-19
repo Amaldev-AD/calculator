@@ -19,46 +19,52 @@
 
         <script src="script.js"></script>
 
+        <link href='https://fonts.googleapis.com/css?family=Russo+One|Play' rel='stylesheet' type='text/css'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Black+Ops+One|Audiowide' rel='stylesheet' type='text/css'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
     <div class="cal">
         <div class="calculator">
-            <div>
+            <div class="divinput">
                 <input type="text" id="result" placeholder="0">
             </div>
-            <div>
+            <div style="display: flex; justify-content: center;">
                 <button id="seven" onclick="displaynumber(7)">7</button>
                 <button id="eight" onclick="displaynumber(8)">8</button>
                 <button id="nine" onclick="displaynumber(8)">9</button>
-                <button id="mul" onclick="displaynumber('*')">X</button>
+                <button class="diff" id="mul" onclick="displaynumber('*')">x</button>
             </div>
-            <div>
+            <div style="display: flex; justify-content: center;">
                 <button id="four" onclick="displaynumber(4)">4</button>
                 <button id="five" onclick="displaynumber(5)">5</button>
                 <button id="six" onclick="displaynumber(6)">6</button>
-                <button id="sub" onclick="displaynumber('-')">-</button>
+                <button class="diff" id="sub" onclick="displaynumber('-')">-</button>
 
             </div>
-            <div>
+            <div style="display: flex; justify-content: center;">
                 <button id="one" onclick="displaynumber(1)">1</button>
                 <button id="two" onclick="displaynumber(2)">2</button>
                 <button id="three" onclick="displaynumber(3)">3</button>
-                <button id="add" onclick="displaynumber('+')">+</button>
+                <button class="diff" id="add" onclick="displaynumber('+')">+</button>
 
             </div>
-            <div>
+            <div style="display: flex; justify-content: center;">
 
                 <button id="doublezero" onclick="displaynumber('00')" class="opt">00</button>
                 <button id="singlezero" onclick="displaynumber(0)" class="opt">0</button>
                 <button id="dot" onclick="displaynumber('.')">.</button>
-                <button id="division" onclick="displaynumber('/')" class="opt">/</button>
+                <button class="diff" id="division" onclick="displaynumber('/')" >/</button>
             </div>
 
-            <div>
-                <button id="ac" onclick="clearbox()">AC</button>
-                <button id="del" onclick="removelastitem()">del</button>
-                <button id="equal" onclick="evaluateExp()">=</button>
+            <div style="display: flex; justify-content: center;">
+                <button class="diff" id="ac" onclick="clearbox()">AC</button>
+                <button class="diff" id="del" onclick="removelastitem()"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="diff" id="equal" onclick="evaluateExp()">=</button>
             </div>
 
         </div>
